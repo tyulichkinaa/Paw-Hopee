@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Paw & Hope</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="logo-container">
+                 <img src="img/Group-3.svg" class="logo-svg" alt="logo"> 
+            </div>
+            <h1 class="tittle">Paw & Hope</h1>
+            <p class="description"> 
+             Выполняйте задания — мы<br>  
+             помогаем тем, кто не может<br>
+             попросить о помощи сам.
+            </p>
+            <div class="pagination">
+                <span class="active"></span>
+            </div>
+            <button class="btn" id="startBtn">Начать</button>
+        </div>
+        <div class="page auth-form">
+            <h2 class="auth-tittle" id="authTittle">Вход в аккаунт</h2>
+            <p class="auth-subtittle" id="authSubtittle">Войдите, чтобы продолжить выполнять задания и следить за прогрессом.</p>
+            <div class="tumbler-container">
+                <button class="tumbler-btn active" id="tumblerLogin">Войти</button>
+                <button class="tumbler-btn" id="tumblerRegistr">Регистрация</button>
+            </div>
+            <div class="input-fields">
+                <input type="text" placeholder="Ваше имя" class="auth-input hidden" id="nameInput">
+                <input type="email" placeholder="Email" class="auth-input" id="emailInput">
+                <input type="password" placeholder="Пароль" class="auth-input" id="passwordInput">
+            </div>
+            <button class="btn auth-submit-btn">Войти</button>
+            <p class="auth-footer">
+               Данные сохраняются локально в этом сеансе (в памяти приложения), чтобы вы могли<br>
+               пользоваться заданиями и профилем.
+             </p>
+        </div>
+        <div class="main-page" id="mainPage">
+            <div class="main-header">
+                <div class="user-greeting">
+                    <span class="greeting-text" id="userGreeting">Добро пожаловать</span>
+                </div>
+            </div>
+            <div class="banner">
+                <h2 class="banner-tittle">Добрые дела начинаются с одного действия</h2>
+                <p class="banner-description">Выполняйте простые задания, а мы переводим деньги в приюты и детские дома.</p>
+                <button class="btn banner-btn" id="bannerBtn">Смотреть задания &rarr;</button>
+            </div>
+            <div class="static-section">
+                <h3 class="static-tittle">Уже помогли</h3>
+                <div class="statist-conteiner">
+                    <div class="stat-item">
+                        <img src="img/Group-9-1.svg" class="stat-icon-img" alt="Перечислено">
+                        <span class="stat-number">₽ 12 450 000+</span>
+                        <span class="stat-label">Перечислено</span>
+                    </div>
+                    <div class="stat-item">
+                        <img src="img/Group-10-1.svg" class="stat-icon-img" alt="Приюты">
+                        <span class="stat-number">56</span>
+                        <span class="stat-label">Приютов и фондов</span>
+                    </div>
+                    <div class="stat-item">
+                        <img src="img/Group-12-1.svg" class="stat-icon-img" alt="Помогли">
+                        <span class="stat-number">8 900+</span>
+                        <span class="stat-label">Детей и животных</span>
+                    </div>    
+                </div>
+            </div>
+            <div class="fonds-section">
+                <div class="section-header">
+                    <h3 class="section-tittle">Куда мы помогаем</h3>
+                </div>
+                <div class="fonds-grid">
+                    <div class="fond-card">
+                        <img src="img/Group-13.svg" class="card-icon-img" alt="Вита">
+                        <span class="fond-name">Вита</span>
+                    </div>
+                    <div class="fond-card">
+                        <img src="img/nika.svg" class="card-icon-img" alt="Ника">
+                        <span class="fond-name">Ника</span>
+                    </div>
+                    <div class="fond-card">
+                        <img src="img/Group-15.svg" class="card-icon-img" alt="Дом с хвостом">
+                        <span class="fond-name">Дом с хвостом</span>
+                    </div>
+                    <div class="fond-card">
+                        <img src="img/Group-16.svg" class="card-icon-img" alt="Детские сердца">
+                        <span class="fond-name">Детские сердца</span>
+                    </div>
+                </div>
+                <div class="show-all-wrapper">
+                    <a href="#" class="show-all">Показать все фонды &rarr;</a>
+                </div>
+            </div>
+        </div>
+        <div class="all-funds-page" id="allFundsPage">
+            <div class="all-funds-header">
+               <button class="back-btn" id="backFromFunds"> &larr; Назад</button> 
+               <h1 class="all-funds-title">Куда мы помогаем</h1>
+            </div>
+            <p class="all-funds-description">Мы сотрудничаем только с проверенными фондами и приютами</p>
+            <div class="all-funds-categories">
+                <button class="category-tag-active">Приюты для собак</button>
+                <button class="category-tag">Детские дома</button>
+            </div>
+            <div class="all-funds-list">
+                <div class="fund-detail-card">
+                    <div class="fund-detail-header">
+                        <div class="fund-detail-icon">
+                            <img src="img/nika.svg" class="detail-icon-img" alt="Ника">
+                        </div>
+                        <div class="fund-detail-info">
+                            <h3 class="fund-detail-name">Ника</h3>
+                            <p class="fund-detail-desc">Помогаем бездомным животным найти дом и получить лечение.</p>
+                        </div>
+                    </div>
+                    <div class="fund-detail-footer">
+                        <span class="fund-detail-year">С нами с 2022 года</span>
+                        <span class="fund-detail-raised">₽ 2 450 000+</span>
+                    </div>
+                </div>
+                <div class="fund-detail-card">
+                    <div class="fund-detail-header">
+                        <div class="fund-detail-icon">
+                            <img src="img/Group-15.svg"  class="detail-icon-img" alt="Дом с хвостом">
+                        </div>                       
+                        <div class="fund-detail-info">
+                            <h3 class="fund-detail-name">Дом с хвостом</h3>
+                             <p class="fund-detail-desc">Содержим приют, кормим и лечим собак, ищем семьи.</p>
+                        </div>
+                    </div>
+                    <div class="fund-detail-footer">
+                        <span class="fund-detail-year">С нами с 2023 года</span>
+                        <span class="fund-detail-raised">₽ 1 980 000+</span>
+                    </div>
+                </div>
+                <div class="fund-detail-card">
+                    <div class="fund-detail-header">
+                        <div class="fund-detail-icon">
+                            <img src="img/Group-13.svg" class="detail-icon-img" alt="Вита">
+                        </div>                        
+                        <div class="fund-detail-info">
+                            <h3 class="fund-detail-name">Вита</h3>
+                            <p class="fund-detail-desc">Стерилизация, лечение и защита животных от жестокости.</p>
+                        </div>
+                    </div>
+                    <div class="fund-detail-footer">
+                        <span class="fund-detail-year">С нами с 2021 года</span>
+                        <span class="fund-detail-raised">₽ 1 650 000+</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="profile-page" id="profilePage">
+            <h2 class="profile-title">Профиль</h2>           
+            <div class="profile-user-card">
+                <div class="profile-avatar" id="profileAvatar">U</div>
+                <div class="profile-user-details">
+                    <h3 class="profile-username" id="profileUsername">Пользователь</h3>
+                    <span class="profile-email" id="profileEmail">email@example.com</span>
+                </div>
+            </div>
+            <div class="profile-stats-row">
+                <div class="profile-stat-box">
+                    <span class="profile-stat-num" id="completedTasks">0</span>
+                    <span class="profile-stat-text">заданий выполнено</span>
+                </div>
+                <div class="profile-stat-box">
+                    <span class="profile-stat-num" id="totalMoney">₽ 0</span>
+                    <span class="profile-stat-text">переведено фондам</span>
+                </div>
+                <div class="profile-stat-box">
+                    <span class="profile-stat-num" id="remainingTasks">6</span>
+                    <span class="profile-stat-text">осталось сегодня</span>
+                </div>
+            </div>
+            <div class="profile-menu">
+                <div class="profile-menu-item" id="myTasksBtn">
+                    <div class="profile-menu-left">
+                        <div class="profile-menu-icon-container">
+                            <img src="img/Group-18-1.svg" alt="Мои задания">
+                        </div>
+                        <span>Мои задания</span>
+                    </div>
+                    <span class="profile-menu-arrow">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </span>
+                </div>              
+                <div class="profile-menu-item" id="myFundsBtn">
+                    <div class="profile-menu-left">
+                        <div class="profile-menu-icon-container">
+                            <img src="img/heart.svg" alt="Фонды, которым помогаю">
+                        </div>
+                        <span>Фонды, которым помогаю</span>
+                    </div>
+                    <span class="profile-menu-arrow">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </span>
+                </div>                
+                <div class="profile-menu-item">
+                    <div class="profile-menu-left">
+                        <div class="profile-menu-icon-container">
+                             <img src="img/Group-21.svg" alt="Настройки">
+                        </div>
+                        <span>Настройки</span>
+                    </div>
+                    <span class="profile-menu-arrow">
+                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </span>
+                </div>
+            </div>
+            <button class="profile-logout-btn" id="profileLogoutBtn">
+                <span>Выйти из аккаунта</span>
+                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                    <polyline points="16 17 21 12 16 7"></polyline>
+                    <line x1="21" y1="12" x2="9" y2="12"></line>
+                </svg>
+            </button>
+        </div>
+        <div class="bottom-nav hidden" id="globalBottomNav">
+            <div class="nav-item active" id="navHomeBtn">
+                <img src="img/Group-4.svg" class="nav-icon-img" alt="Главная">
+                <span class="nav-label">Главная</span>
+            </div>
+            <div class="nav-item" id="navTasksBtn">
+                <img src="img/Group-5.svg" class="nav-icon-img" alt="Задания">
+                <span class="nav-label">Задания</span>
+            </div>
+            <div class="nav-item" id="navProfileBtn">
+                <img src="img/Group-6.svg" class="nav-icon-img" alt="Профиль">
+                <span class="nav-label">Профиль</span>
+            </div>
+        </div>
+        <div class="tasks-page" id="tasksPage">
+            <h2 class="tasks-main-tittle">Задания</h2>
+            <p class="tasks-subtittle">Выполняйте задания-помогайте вместе с нами</p>
+            <div class="tasks-filters">
+                <button class="filter-btn active" data-filters="all">Все задания</button>
+                <button class="filter-btn" data-filters="easy">Простые</button>
+                <button class="filter-btn" data-filters="daily">Ежедневные</button>
+            </div>
+            <div class="tasks-progress-card">
+                <div class="progress-info">
+                    <span>Выполнено сегодня</span>
+                    <span class="progress-count">0/6</span>
+                </div>
+                <div class="progress-bar-bg">
+                    <div class="progress-bar-fill" style="width: 0%;"></div>
+                </div>
+            </div>
+            <div class="tasks-list">
+                <div class="task-card" data-type="easy">
+                    <div class="task-card-left">
+                        <div class="task-icon-circle">
+                            <img src="img/heart.svg" alt="Поставьте лайк в нашей соцсети">
+                        </div>
+                        <div class="task-info">
+                           <span class="task-title">Поставьте лайк в нашей соцсети</span>
+                           <div class="task-meta" >
+                            <span class="task-price">₽ 25</span>
+                            <span class="task-time">1 минута</span>
+                           </div>
+                        </div>
+                    </div>
+                    <button class="task-plus-btn">+</button>
+                </div>
+                <div class="task-card" data-type="easy">
+                    <div class="task-card-left">
+                        <div class="task-icon-circle">
+                            <img src="img/samolet.svg" alt="Поделитесь постом с друзьями">
+                        </div>
+                        <div class="task-info">
+                            <span class="task-title">Поделитесь постом с друзьями</span>
+                            <div class="task-meta">
+                                <span class="task-price">₽ 50</span>
+                                <span class="task-time">1 минута</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="task-plus-btn">+</button>
+                </div>
+                <div class="task-card" data-type="easy">
+                    <div class="task-card-left">
+                        <div class="task-icon-circle">
+                            <img src="img/video.svg" alt="Посмотрите видео о приюте">
+                        </div>
+                        <div class="task-info">
+                            <span class="task-title">Посмотрите видео о приюте</span>
+                            <div class="task-meta">
+                                <span class="task-price">₽ 30</span>
+                                <span class="task-time">2 минуты</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="task-plus-btn">+</button>
+                </div>
+                <div class="task-card" data-type="daily">
+                    <div class="task-card-left">
+                        <div class="task-icon-circle">
+                            <img src="img/star.svg" alt="Оставьте отзыв о приложении">
+                        </div>
+                        <div class="task-info">
+                            <span class="task-title">Оставьте отзыв о приложении</span>
+                            <div class="task-meta">
+                                <span class="task-price">₽ 75</span>
+                                <span class="task-time">2 минуты</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="task-plus-btn">+</button>
+                </div>
+                <div class="task-card" data-type="easy">
+                    <div class="task-card-left">
+                        <div class="task-icon-circle">
+                            <img src="img/subskribe.svg" alt="Подпишитесь на рассылку">
+                        </div>
+                        <div class="task-info">
+                           <span class="task-title">Подпишитесь на рассылку</span>
+                           <div class="task-meta" >
+                             <span class="task-price">₽ 20</span>
+                             <span class="task-time">1 минута</span>
+                           </div>
+                        </div>
+                    </div>
+                    <button class="task-plus-btn">+</button>
+                </div>
+                <div class="task-card" data-type="daily">
+                    <div class="task-card-left">
+                        <div class="task-icon-circle">
+                            <img src="img/friend.svg" alt="Пригласите друга в приложение">
+                        </div> 
+                        <div class="task-info">
+                            <span class="task-title">Пригласите друга в приложение</span>
+                            <div class="task-meta">
+                                <span class="task-price">₽ 100</span>
+                                <span class="task-time">2 минуты</span> 
+                            </div> 
+                        </div>                                            
+                    </div>
+                    <button class="task-plus-btn">+</button>
+                </div>
+            </div>
+        </div>
+        <div class="overlay" id="overlay"></div>
+        <script src="script.js"></script>
+    </body>
+</html>
+   
